@@ -4,7 +4,7 @@
 
 ## Deployed Application
 
-**Live Demo**: [https://instagram-stories-react-demo.netlify.app/](https://instagram-stories-react-demo.netlify.app/)  
+**Live Demo**: [https://instagram-stories-git-feat-in-017fa2-hitanshushah1001s-projects.vercel.app/](https://instagram-stories-git-feat-in-017fa2-hitanshushah1001s-projects.vercel.app/)  
 
 
 
