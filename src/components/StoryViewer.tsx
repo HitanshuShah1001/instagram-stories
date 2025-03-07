@@ -104,6 +104,7 @@ const StoryViewer: React.FC<StoryViewerProps> = ({
               index={index}
               activeIndex={storyIndex}
               onComplete={goToNextStory}
+              isImageLoaded={!loading}
             />
           ))}
         </div>
