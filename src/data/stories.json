@@ -1,0 +1,92 @@
+
+[
+  {
+    "userId": "user1",
+    "username": "johndoe",
+    "profilePic": "https://picsum.photos/id/1012/150",
+    "stories": [
+      {
+        "id": "story1",
+        "imageUrl": "https://picsum.photos/id/1015/1080/1920",
+        "username": "johndoe",
+        "timestamp": "2h ago"
+      },
+      {
+        "id": "story2",
+        "imageUrl": "https://picsum.photos/id/1016/1080/1920",
+        "username": "johndoe",
+        "timestamp": "1h ago"
+      }
+    ]
+  },
+  {
+    "userId": "user2",
+    "username": "janedoe",
+    "profilePic": "https://picsum.photos/id/1027/150",
+    "stories": [
+      {
+        "id": "story3",
+        "imageUrl": "https://picsum.photos/id/1018/1080/1920",
+        "username": "janedoe",
+        "timestamp": "30m ago"
+      }
+    ]
+  },
+  {
+    "userId": "user3",
+    "username": "mike_smith",
+    "profilePic": "https://picsum.photos/id/1025/150",
+    "stories": [
+      {
+        "id": "story4",
+        "imageUrl": "https://picsum.photos/id/1019/1080/1920",
+        "username": "mike_smith",
+        "timestamp": "5h ago"
+      },
+      {
+        "id": "story5",
+        "imageUrl": "https://picsum.photos/id/1020/1080/1920",
+        "username": "mike_smith",
+        "timestamp": "4h ago"
+      },
+      {
+        "id": "story6",
+        "imageUrl": "https://picsum.photos/id/1021/1080/1920",
+        "username": "mike_smith",
+        "timestamp": "3h ago"
+      }
+    ]
+  },
+  {
+    "userId": "user4",
+    "username": "sarah_j",
+    "profilePic": "https://picsum.photos/id/1024/150",
+    "stories": [
+      {
+        "id": "story7",
+        "imageUrl": "https://picsum.photos/id/1022/1080/1920",
+        "username": "sarah_j",
+        "timestamp": "1d ago"
+      }
+    ]
+  },
+  {
+    "userId": "user5",
+    "username": "alex_k",
+    "profilePic": "https://picsum.photos/id/1005/150",
+    "stories": [
+      {
+        "id": "story8",
+        "imageUrl": "https://picsum.photos/id/1023/1080/1920",
+        "username": "alex_k",
+        "timestamp": "12h ago"
+      },
+      {
+        "id": "story9",
+        "imageUrl": "https://picsum.photos/id/1024/1080/1920",
+        "username": "alex_k",
+        "timestamp": "10h ago"
+      }
+    ]
+  }
+]
