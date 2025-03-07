@@ -11,7 +11,31 @@
 ## Project Structure
 
 
-. ├── cypress/ │ ├── e2e/ │ │ └── instagram-stories.cy.ts // Cypress E2E tests │ ├── fixtures/ │ ├── support/ │ │ ├── commands.ts │ │ └── e2e.ts │ └── cypress.config.ts ├── src/ │ ├── components/ │ │ ├── StoryList.tsx │ │ ├── StoryViewer.tsx │ │ ├── ProgressBar.tsx │ │ └── NavigationControls.tsx │ ├── types/ │ │ └── index.ts │ ├── data/ │ │ └── stories.json │ ├── App.tsx │ └── index.tsx ├── public/ ├── package.json ├── tsconfig.json └── README.md
+.
+├── cypress/
+│   ├── e2e/
+│   │   └── instagram-stories.cy.ts  // Cypress E2E tests
+│   ├── fixtures/
+│   ├── support/
+│   │   ├── commands.ts
+│   │   └── e2e.ts
+│   └── cypress.config.ts
+├── src/
+│   ├── components/
+│   │   ├── StoryList.tsx
+│   │   ├── StoryViewer.tsx
+│   │   ├── ProgressBar.tsx
+│   │   └── NavigationControls.tsx
+│   ├── types/
+│   │   └── index.ts
+│   ├── data/
+│   │   └── stories.json
+│   ├── App.tsx
+│   └── index.tsx
+├── public/
+├── package.json
+├── tsconfig.json
+└── README.md
 
 
 **Key Folders and Files**:
