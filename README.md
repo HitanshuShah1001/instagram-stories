@@ -1,46 +1,102 @@
-# Getting Started with Create React App
+# Instagram Stories - React Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> A simple Instagram-like stories feature built with **React**, demonstrating story previews, a viewer with navigation, and a progress bar for each story segment.
 
-## Available Scripts
+## Deployed Application
 
-In the project directory, you can run:
+**Live Demo**: [https://instagram-stories-delta.vercel.app/]( https://instagram-stories-delta.vercel.app/)  
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Project Structure
 
-### `npm test`
+.
+├── cypress/
+│   ├── e2e/
+│   │   └── instagram-stories.cy.ts  // Cypress E2E tests
+│   ├── fixtures/
+│   ├── support/
+│   │   ├── commands.ts
+│   │   └── e2e.ts
+│   └── cypress.config.ts
+├── src/
+│   ├── components/
+│   │   ├── StoryList.tsx
+│   │   ├── StoryViewer.tsx
+│   │   ├── ProgressBar.tsx
+│   │   └── NavigationControls.tsx
+│   ├── types/
+│   │   └── index.ts
+│   ├── data/
+│   │   └── stories.json
+│   ├── App.tsx
+│   └── index.tsx
+├── public/
+├── package.json
+├── tsconfig.json
+└── README.md
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+**Key Folders and Files**:
+- **`src/components`**: Contains React components for the stories feature (StoryList, StoryViewer, etc.).
+- **`src/data/stories.json`**: Mock data of user stories.
+- **`src/types`**: TypeScript interfaces for `Story` and `StoriesGroup`.
+- **`cypress/`**: Contains Cypress test files and configuration for end-to-end testing.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Getting Started
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+These instructions will help you set up and run the application and tests on your local machine.
 
-### `npm run eject`
+### Prerequisites
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- [Node.js](https://nodejs.org/) (version 14 or higher recommended)
+- [npm](https://www.npmjs.com/) or [Yarn](https://yarnpkg.com/)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Installation
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+1. **Clone or Download** the repository.
+2. **Install dependencies**:
+   ```bash
+   npm install
+   or 
+   yarn install
+   ```
+3. **Start the application**:
+   ```bash  
+   npm start
+   ```
+    The application will run on `http://localhost:3000`.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+4. **Run Cypress E2E tests**:
+   ```bash
+   npm run cypress:open
+   ```
+   This will open the Cypress Test Runner. Click on `instagram-stories.cy.ts` to run the tests.
 
-## Learn More
+## Design Choices & Performance/Scalability
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Component-Based Architecture
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+We separated the application into small, reusable components (StoryList, StoryViewer, ProgressBar, and NavigationControls). This keeps the code organized and maintainable as the project grows.
+
+### Efficient Story Loading
+
+- **Conditional rendering of stories**: We only render the story viewer when needed to minimize overhead.
+- **Preloading images**: Using an `Image()` object in StoryViewer ensures a smooth viewing experience.
+
+### TypeScript
+
+- **Type safety**: Using TypeScript interfaces (Story, StoriesGroup) ensures type safety and easier refactoring.
+
+### Performance
+
+- **React hooks**: We used React hooks (`useState`, `useEffect`, `useCallback`) to manage stateful logic in a clear, efficient manner.
+- **Code splitting**: If the app scales, we can easily integrate React lazy loading to load heavy components or data only when needed.
+
+### Scalability
+
+- **Component addition**: The structure allows easy addition of new components (e.g., new story features).
+- **Mock data**: Mock data is stored in `stories.json`; for a real backend, we would fetch from an API and keep the structure largely the same.
+- **Cypress E2E tests**: Ensure that additional features and refactors don’t break existing functionality.
