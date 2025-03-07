@@ -1,0 +1,17 @@
+.navigation-prev,
+.navigation-next {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 25%;
+  z-index: 1001;
+  transition: 0.15s ease;
+}
+
+.navigation-prev {
+  left: 0;
+}
+
+.navigation-next {
+  right: 0;
+}
